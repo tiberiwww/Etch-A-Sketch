@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: auto 0;
+  font-family: "Press Start 2P", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(209, 63, 63);
+  background-image: radial-gradient(circle, #eeaeca, #78cccb);
+  user-select: none;
+}
+
+.container {
+  /* margin: auto 0; */
+  height: 68rem;
+  width: 68rem;
+  background-color: #800d1e;
+  border-radius: 8rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: #ffdb47;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-shadow: 0 1rem 4rem rgb(255, 255, 255);
+}
+
+.grid {
+  height: 50rem;
+  width: 50rem;
+  background-color: #fff;
+  box-shadow: inset 0 1rem 2rem 1rem rgba(0, 0, 0, 0.2);
+  display: grid;
+}
+
+.buttons {
+  padding-top: 1rem;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+  padding-bottom: 1rem;
+  letter-spacing: -0.05rem;
+}
+
+#color {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* Remove the border of color swatch */
+input[type="color"] {
+  border: none;
+  border-radius: 50rem;
+  outline: 0.5rem solid #fff;
+  outline-offset: -0.5rem;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 6rem;
+}
+
+.btn {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1.35rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn,
+.btn--circle {
+  /* font-size: 80%; */
+  border: none;
+  transition: all 0.2 ease-out;
+}
+
+.btn--circle {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover,
+.btn--circle:hover {
+  background-color: #e9ecef;
+  outline: 0.7rem solid #ffdb47;
+  outline-offset: -0.5rem;
+}
+
+.btn--clear {
+  font-size: 1.35rem;
+}
+/* FOOTER  */
+
+.square {
+  background-color: #fff;
+  border: 0.1px solid rgb(176, 176, 176);
+  user-select: none;
+}
+
+.color {
+  background-color: #333;
+  border: 0.5px solid #000;
+  user-select: none;
+}
+
+.active {
+  outline: 0.7rem solid #ffdb47;
+  outline-offset: -0.5rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: rgb(50, 50, 50);
+}
+
+span {
+  margin-right: 1rem;
+}
+
+/* Media */
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+
+  .buttons {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media (max-width: 280px) {
+  html {
+    font-size: 20%;
+  }
+
+  .buttons {
+    gap: 1rem;
+  }
+}
